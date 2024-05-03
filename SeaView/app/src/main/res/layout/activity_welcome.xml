@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@drawable/welcomebackground">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/seaviewlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sora_bold"
+        android:text="Welcome!"
+        android:textColor="@color/lightred"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="316dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="20dp"
+        android:text="Log In or Sign up to Book and Manage your Dining Experiences."
+        android:textAlignment="center"
+        android:textColor="@color/darkred"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="148dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="30dp"
+            android:text="Sign Up"
+            app:cornerRadius="16dp"
+            android:backgroundTint="@color/offwhite"
+            android:textColor="@color/lightred"
+            app:strokeColor="@color/lightred"
+            app:strokeWidth="2dp"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="148dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/lightred"
+            android:text="Login"
+            app:cornerRadius="16dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

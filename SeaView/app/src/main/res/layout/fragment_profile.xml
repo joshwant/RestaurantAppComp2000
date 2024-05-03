@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment">
+
+
+    <TextView
+        android:id="@+id/profileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sora_bold"
+        android:text="Profile"
+        android:textColor="@color/darkgrey"
+        android:textSize="46sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/accountInfoButton"
+        android:layout_width="245dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/offwhite"
+        android:text="Account Info"
+        android:textColor="@color/lightred"
+        android:textSize="20sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileText"
+        app:strokeColor="@color/lightred"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="245dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/offwhite"
+        android:text="Review"
+        android:textColor="@color/lightred"
+        android:textSize="20sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountInfoButton"
+        app:strokeColor="@color/lightred"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/historyButton"
+        android:text="History"
+        android:layout_width="245dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewButton"
+        android:textSize="20sp"
+        android:backgroundTint="@color/offwhite"
+        android:textColor="@color/lightred"
+        app:strokeColor="@color/lightred"
+        app:strokeWidth="2dp"
+        app:cornerRadius="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
